@@ -1,0 +1,78 @@
+<html>
+
+<head>
+
+<title>
+DONARS PAYMENT FORM
+
+</title>
+<link rel="stylesheet" href="css/st1.css">
+<div class="registration-form">
+
+</head>
+<br>
+<br>
+<body>
+<h1>ENTER DETAILS</h1>
+
+
+<form action="donor.php" method="POST">
+
+<label>FUND TYPE OF CURRENCY </label><br>
+					
+				<br>	<input type="radio" name="fund" value="Indian" required>INDIAN RUPEES<br>
+					&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="fund" value="Dollar" required>DOLLAR<br>
+					&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="fund" value="Euros" required>EUROS<br>
+					&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="fund" value="Pounds" required>POUNDS<br>
+<br>
+			
+
+<lable> AMOUNT</lable>
+<input type="number" name="amount" placeholder="1500"required/>
+<br>
+
+<br>
+<label>EMAIL FOR PAYMENT</label><br><br>
+<input type="email" name="email" placeholder="abc@gmail.com"required><br>
+
+
+				
+                <div class="col-12">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">Card Number</p>
+                        <input class="form-control mb-3" type="text" name="cardnumber" placeholder="1234 5678 435678">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">Expiry</p>
+                        <input class="form-control mb-3" type="text" name="expdate" placeholder="MM/YYYY">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">CVV/CVC</p>
+                        <input class="form-control mb-3 pt-2 " type="password" name="cvcode" placeholder="*">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">Person Name</p>
+                        <input class="form-control mb-3" type="text" name="cardowner" placeholder="Name"  >
+                    </div>
+                </div>
+          <br>
+
+<br>      
+<input type="submit" value="submit" required/><br>
+<br>
+
+
+
+</form>
+</div>
+</body>
+</html>
